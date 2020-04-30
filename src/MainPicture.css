@@ -1,0 +1,35 @@
+.MainPicture{
+    background-color: aquamarine;
+    position: absolute;
+        top: 93px;
+        right:1px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 575px;
+}
+
+.shown-pic{
+    width:100%;
+    transform-origin: bottom center;
+}
+
+.hidden-pic{
+    width:100%;
+    position:relative;
+        bottom:580px;
+    transform: rotate(180deg);
+    transform-origin: bottom center;
+}
+
+.leftArrow{
+    position: absolute;
+        bottom: 300px;
+        left: 20px;
+}
+
+.rightArrow{
+
+}
