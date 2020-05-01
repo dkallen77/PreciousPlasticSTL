@@ -14,39 +14,6 @@ class MainPicture extends Component {
       }
     }
 
-    // RotateImgsOpps(){
-    //     var shown = document.getElementById("shown-pic");
-    //     var hidden = document.getElementById("hidden-pic");
-    //     var rot = 0;
-    //     var id = setInterval(frame, 5);
-    //     function frame() {
-    //         if (rot == 180) {
-    //             clearInterval(id);
-    //             // hidden.style.bottom = '20px';
-    //             var shownPic = shown.src;
-    //             if(shownPic == {join}){
-    //                 hidden.src={recycle};
-    //             }
-    //             if(shownPic == {recycle}){
-    //                 hidden.src={transform};
-    //             }
-    //             if(shownPic == {transform}){
-    //                 hidden.src={community};
-    //             }
-    //             if(shownPic == {community}){
-    //                 hidden.src={join};
-    //             }
-    //             return;
-    //         } else {
-    //             rot++;
-    //             var rotOp = 180 +rot;
-    //             shown.style.transform = 'rotate('+rotOp+'deg)';
-    //             hidden.style.transform = 'rotate('+rot+'deg)';
-
-    //         }
-    //     }
-    // }
-
     RotateImgs = () => {
         if(this.state.flipped == false){
             this.setState({flipped:true});
@@ -132,9 +99,9 @@ class MainPicture extends Component {
   
     render(){
         return (
-            <div className="MainPicture" onClick={this.RotateImgs}>
-            <img src={join} alt="Join" className="shown-pic" id="shown-pic"/>
-            <img src={collect} alr="Collect" className="hidden-pic" id="hidden-pic"/>
+            <div className="MainPicture" id="MainPicture" onClick={this.RotateImgs}>
+                    <img src={join} alt="Join" className="shown-pic" id="shown-pic"/>
+                    <img src={collect} alr="Collect" className="hidden-pic" id="hidden-pic"/>
             </div>
 
         );

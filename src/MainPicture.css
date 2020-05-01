@@ -1,5 +1,4 @@
 .MainPicture{
-    background-color: aquamarine;
     position: absolute;
         top: 93px;
         right:1px;
@@ -8,28 +7,36 @@
     margin-right: auto;
     overflow-x: hidden;
     overflow-y: hidden;
-    height: 575px;
+    padding-top:37%;
+    height:0px;
 }
 
 .shown-pic{
+    position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
     width:100%;
+    height: auto;
     transform-origin: bottom center;
 }
 
 .hidden-pic{
     width:100%;
-    position:relative;
-        bottom:580px;
+    height:auto;
+    position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
     transform: rotate(180deg);
     transform-origin: bottom center;
 }
 
-.leftArrow{
-    position: absolute;
-        bottom: 300px;
-        left: 20px;
-}
-
-.rightArrow{
-
+.hidden-div{
+    width: 100%;
+    z-index:1;
+    background-color: white;
+    height: 500px;
 }
