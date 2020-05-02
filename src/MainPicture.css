@@ -11,25 +11,29 @@
     height:0px;
 }
 
+.MainPicture:hover{
+    cursor: pointer;
+}
+
 .shown-pic{
     position: absolute;
-        top:0;
-        left:0;
         bottom:0;
-        right:0;
-    width:100%;
+        left:-28%;
+        right:0%;
+    width:150%;
     height: auto;
     transform-origin: bottom center;
+    margin: auto;
 }
 
 .hidden-pic{
-    width:100%;
+    width:150%;
     height:auto;
     position:absolute;
-        top:0;
-        left:0;
-        bottom:0;
-        right:0;
+        bottom:0px;
+        left:-28%;
+        right:0%;
+    margin:auto;
     transform: rotate(180deg);
     transform-origin: bottom center;
 }
@@ -39,4 +43,39 @@
     z-index:1;
     background-color: white;
     height: 500px;
+}
+
+.title{
+    position: absolute;
+        top: 20%;
+        left:0;
+        right: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    z-index: 1;
+
+}
+.title-media{
+    position: absolute;
+        top: 20%;
+        left:0;
+        right: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+
+}
+
+@media screen and (min-width: 450px) { 
+    .title-media{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .title{
+        display:none;
+    }
 }

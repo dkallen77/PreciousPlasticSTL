@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './MainPicture.css';
-import join from './img/join.png';
-import collect from './img/collect.png';
-import recycle from './img/recycle.png';
-import transform from './img/transform.png';
-import community from './img/community.png';
+import join from './img/join2.png';
+import collect from './img/collect2.png';
+import recycle from './img/recycle2.png';
+import transform from './img/transform2.png';
+import community from './img/community2.png';
 
 class MainPicture extends Component {
     constructor(props) {
@@ -25,23 +25,23 @@ class MainPicture extends Component {
                 if (rot == 180) {
                     clearInterval(id);
                     var hiddenPic = hidden.src;
-                    if(hiddenPic == "http://localhost:3000/static/media/join.efa53dca.png"){  //Join
+                    if(hiddenPic == "http://localhost:3000/static/media/join2.b5e72db5.png"){  //Join
                         shown.src=collect;
                         shown.alt="Collect";
                     }
-                    if(hiddenPic == "http://localhost:3000/static/media/collect.0cc008bd.png"){  //Collect
+                    if(hiddenPic == "http://localhost:3000/static/media/collect2.955e22d4.png"){  //Collect
                         shown.src=recycle;
                         shown.alt = "Recycle";
                     }
-                    if(hiddenPic == "http://localhost:3000/static/media/recycle.b9ed3adf.png"){  //Recycle
+                    if(hiddenPic == "http://localhost:3000/static/media/recycle2.08ccdd9c.png"){  //Recycle
                         shown.src=transform;
                         shown.alt="Transform";
                     }
-                    if(hiddenPic == "http://localhost:3000/static/media/transform.67a8a61a.png"){  //Transform
+                    if(hiddenPic == "http://localhost:3000/static/media/transform2.405c62c5.png"){  //Transform
                         shown.src=community;
                         shown.alt="Community";
                     }
-                    if(hiddenPic == "http://localhost:3000/static/media/community.0062cb7a.png"){  //Community
+                    if(hiddenPic == "http://localhost:3000/static/media/community2.968d027b.png"){  //Community
                         shown.src=join;
                         shown.alt="Join"
                     }
@@ -64,23 +64,23 @@ class MainPicture extends Component {
                 if (rot == 180) {
                     clearInterval(id);
                     var shownPic = shown.src;
-                    if(shownPic == "http://localhost:3000/static/media/join.efa53dca.png"){  //Join
+                    if(shownPic == "http://localhost:3000/static/media/join2.b5e72db5.png"){  //Join
                         hidden.src=collect;
                         hidden.alt="Collect";
                     }
-                    if(shownPic == "http://localhost:3000/static/media/collect.0cc008bd.png"){  //Collect
+                    if(shownPic == "http://localhost:3000/static/media/collect2.955e22d4.png"){  //Collect
                         hidden.src=recycle;
                         hidden.alt="Recycle";
                     }
-                    if(shownPic == "http://localhost:3000/static/media/recycle.b9ed3adf.png"){  //Recycle
+                    if(shownPic == "http://localhost:3000/static/media/recycle2.08ccdd9c.png"){  //Recycle
                         hidden.src=transform;
                         hidden.alt="Transform";
                     }
-                    if(shownPic == "http://localhost:3000/static/media/transform.67a8a61a.png"){  //Transform
+                    if(shownPic == "http://localhost:3000/static/media/transform2.405c62c5.png"){  //Transform
                         hidden.src=community;
                         hidden.alt="Community";
                     }
-                    if(shownPic == "http://localhost:3000/static/media/community.0062cb7a.png"){  //Community
+                    if(shownPic == "http://localhost:3000/static/media/community2.968d027b.png"){  //Community
                         hidden.src=join;
                         hidden.alt="Join";
                     }
@@ -100,6 +100,12 @@ class MainPicture extends Component {
     render(){
         return (
             <div className="MainPicture" id="MainPicture" onClick={this.RotateImgs}>
+                <div className="title">
+                    Precious Plastic STL
+                </div>
+                <div className="title-media">
+                    Precious Plastic STL
+                </div>
                     <img src={join} alt="Join" className="shown-pic" id="shown-pic"/>
                     <img src={collect} alr="Collect" className="hidden-pic" id="hidden-pic"/>
             </div>
