@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import NavBar from './NavBar';
 import MainPicture from './MainPicture';
+import OurSolution from './OurSolution';
 
 class App extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <MainPicture />
+        <OurSolution />
       </div>
     );
 }
