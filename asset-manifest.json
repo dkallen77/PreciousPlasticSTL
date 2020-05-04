@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/PreciousPlasticSTL/static/css/main.7e59ccf4.chunk.css",
+    "main.js": "/PreciousPlasticSTL/static/js/main.a6956b60.chunk.js",
+    "main.js.map": "/PreciousPlasticSTL/static/js/main.a6956b60.chunk.js.map",
+    "runtime-main.js": "/PreciousPlasticSTL/static/js/runtime-main.18542632.js",
+    "runtime-main.js.map": "/PreciousPlasticSTL/static/js/runtime-main.18542632.js.map",
+    "static/js/2.8692fd9c.chunk.js": "/PreciousPlasticSTL/static/js/2.8692fd9c.chunk.js",
+    "static/js/2.8692fd9c.chunk.js.map": "/PreciousPlasticSTL/static/js/2.8692fd9c.chunk.js.map",
+    "index.html": "/PreciousPlasticSTL/index.html",
+    "precache-manifest.eb583117670bd948225a928b0df42267.js": "/PreciousPlasticSTL/precache-manifest.eb583117670bd948225a928b0df42267.js",
+    "service-worker.js": "/PreciousPlasticSTL/service-worker.js",
+    "static/css/main.7e59ccf4.chunk.css.map": "/PreciousPlasticSTL/static/css/main.7e59ccf4.chunk.css.map",
+    "static/js/2.8692fd9c.chunk.js.LICENSE.txt": "/PreciousPlasticSTL/static/js/2.8692fd9c.chunk.js.LICENSE.txt",
+    "static/media/Precious-Plastic-Logo.png": "/PreciousPlasticSTL/static/media/Precious-Plastic-Logo.fa1e2c60.png",
+    "static/media/clean.mp4": "/PreciousPlasticSTL/static/media/clean.76c880b8.mp4",
+    "static/media/collect2.png": "/PreciousPlasticSTL/static/media/collect2.955e22d4.png",
+    "static/media/community2.png": "/PreciousPlasticSTL/static/media/community2.968d027b.png",
+    "static/media/dirty_bottle.png": "/PreciousPlasticSTL/static/media/dirty_bottle.e112b888.png",
+    "static/media/join2.png": "/PreciousPlasticSTL/static/media/join2.b5e72db5.png",
+    "static/media/recycle2.png": "/PreciousPlasticSTL/static/media/recycle2.08ccdd9c.png",
+    "static/media/shred.mp4": "/PreciousPlasticSTL/static/media/shred.ad263607.mp4",
+    "static/media/transform2.png": "/PreciousPlasticSTL/static/media/transform2.405c62c5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18542632.js",
+    "static/js/2.8692fd9c.chunk.js",
+    "static/css/main.7e59ccf4.chunk.css",
+    "static/js/main.a6956b60.chunk.js"
+  ]
+}
