@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64a8371e8d0346b9a2888f5601921a47",
+    "revision": "895e6c8e6bd84f72c139b8dee53cbc1c",
     "url": "/PreciousPlasticSTL/index.html"
   },
   {
-    "revision": "574745350ff16f30bbf2",
-    "url": "/PreciousPlasticSTL/static/css/main.4c49ecf7.chunk.css"
+    "revision": "cf424b1c2bbcb4ae37cb",
+    "url": "/PreciousPlasticSTL/static/css/main.0807aa39.chunk.css"
   },
   {
-    "revision": "31bde44e0abf0e69b1cf",
-    "url": "/PreciousPlasticSTL/static/js/2.4482bf96.chunk.js"
+    "revision": "9a8931949b5d841cefc3",
+    "url": "/PreciousPlasticSTL/static/js/2.5c4dc512.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/PreciousPlasticSTL/static/js/2.4482bf96.chunk.js.LICENSE.txt"
+    "url": "/PreciousPlasticSTL/static/js/2.5c4dc512.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "574745350ff16f30bbf2",
-    "url": "/PreciousPlasticSTL/static/js/main.e25317d9.chunk.js"
+    "revision": "cf424b1c2bbcb4ae37cb",
+    "url": "/PreciousPlasticSTL/static/js/main.cf3ac0ef.chunk.js"
   },
   {
     "revision": "7c2542da4df90d981d86",
@@ -54,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1228d043e42c9a79f91675a487e6f6ff",
     "url": "/PreciousPlasticSTL/static/media/ourSolution-img.1228d043.jpg"
+  },
+  {
+    "revision": "bb88c5f37125f060beccec9c654d3177",
+    "url": "/PreciousPlasticSTL/static/media/recycle-main.bb88c5f3.jpeg"
   },
   {
     "revision": "08ccdd9c02acc5d36f1889abf1425a63",
