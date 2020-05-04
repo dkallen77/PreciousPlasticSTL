@@ -3,6 +3,7 @@ import './OurSolution.css';
 import clean from './img/clean.mp4';
 import dirtyBottle from './img/dirty_bottle.png';
 import shred from './img/shred.mp4';
+import inject from './img/inject.mp4';
 
 class OurSolution extends Component {
     constructor(props) {
@@ -16,6 +17,11 @@ class OurSolution extends Component {
 
     playVidShred(){
         var vid = document.getElementById("shredVid");
+        vid.play();
+    }
+
+    playVidInject(){
+        var vid = document.getElementById("injectVid");
         vid.play();
     }
 
@@ -55,6 +61,10 @@ class OurSolution extends Component {
                 </video>
                 <video id="shredVid"  onClick={this.playVidShred}>
                     <source src={shred} type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
+                <video id="injectVid"  onClick={this.playVidInject}>
+                    <source src={inject} type="video/mp4"/>
                     Your browser does not support HTML5 video.
                 </video>
             </div>
