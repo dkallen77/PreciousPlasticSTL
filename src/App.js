@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import MainPicture from './MainPicture';
 import Recycle from './Recycle';
 import OurSolution from './OurSolution';
+import AboutUs from './AboutUs';
 
 class App extends Component {
   render(){
@@ -14,6 +15,7 @@ class App extends Component {
           <MainPicture />
           <Recycle />
           <OurSolution />
+          <AboutUs />
         </div>
       </div>
     );
