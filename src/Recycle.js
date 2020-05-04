@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './recycleComponents/Recycle.css'
+import background from "./recycleComponents/recycleBackground.png"
 
 class Recycle extends Component {
 
@@ -9,6 +10,7 @@ class Recycle extends Component {
             //html goes here
             <div id="recycle">
                 <div id="recycleMain">
+                    <img id="background" src={background} alt="ahh" />
                     <h1>Why Recycle?</h1>
                     {/* this section will have the animated picture
                         and some facts about why current methods aren't
