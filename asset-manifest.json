@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PreciousPlasticSTL/static/css/main.1e7bcf02.chunk.css",
-    "main.js": "/PreciousPlasticSTL/static/js/main.db26543a.chunk.js",
-    "main.js.map": "/PreciousPlasticSTL/static/js/main.db26543a.chunk.js.map",
+    "main.css": "/PreciousPlasticSTL/static/css/main.df9e191e.chunk.css",
+    "main.js": "/PreciousPlasticSTL/static/js/main.7a633e53.chunk.js",
+    "main.js.map": "/PreciousPlasticSTL/static/js/main.7a633e53.chunk.js.map",
     "runtime-main.js": "/PreciousPlasticSTL/static/js/runtime-main.18542632.js",
     "runtime-main.js.map": "/PreciousPlasticSTL/static/js/runtime-main.18542632.js.map",
-    "static/js/2.d9e75d10.chunk.js": "/PreciousPlasticSTL/static/js/2.d9e75d10.chunk.js",
-    "static/js/2.d9e75d10.chunk.js.map": "/PreciousPlasticSTL/static/js/2.d9e75d10.chunk.js.map",
+    "static/js/2.4482bf96.chunk.js": "/PreciousPlasticSTL/static/js/2.4482bf96.chunk.js",
+    "static/js/2.4482bf96.chunk.js.map": "/PreciousPlasticSTL/static/js/2.4482bf96.chunk.js.map",
     "index.html": "/PreciousPlasticSTL/index.html",
-    "precache-manifest.de89b1c5982e384a2b7a0329ec1d284b.js": "/PreciousPlasticSTL/precache-manifest.de89b1c5982e384a2b7a0329ec1d284b.js",
+    "precache-manifest.9c4ebed948d836762413ea07b8045028.js": "/PreciousPlasticSTL/precache-manifest.9c4ebed948d836762413ea07b8045028.js",
     "service-worker.js": "/PreciousPlasticSTL/service-worker.js",
-    "static/css/main.1e7bcf02.chunk.css.map": "/PreciousPlasticSTL/static/css/main.1e7bcf02.chunk.css.map",
-    "static/js/2.d9e75d10.chunk.js.LICENSE.txt": "/PreciousPlasticSTL/static/js/2.d9e75d10.chunk.js.LICENSE.txt",
+    "static/css/main.df9e191e.chunk.css.map": "/PreciousPlasticSTL/static/css/main.df9e191e.chunk.css.map",
+    "static/js/2.4482bf96.chunk.js.LICENSE.txt": "/PreciousPlasticSTL/static/js/2.4482bf96.chunk.js.LICENSE.txt",
     "static/media/Precious-Plastic-Logo.png": "/PreciousPlasticSTL/static/media/Precious-Plastic-Logo.fa1e2c60.png",
     "static/media/clean.mp4": "/PreciousPlasticSTL/static/media/clean.76c880b8.mp4",
     "static/media/collect2.png": "/PreciousPlasticSTL/static/media/collect2.955e22d4.png",
@@ -19,15 +19,17 @@
     "static/media/dirty_bottle.png": "/PreciousPlasticSTL/static/media/dirty_bottle.e112b888.png",
     "static/media/inject.mp4": "/PreciousPlasticSTL/static/media/inject.ff4835a4.mp4",
     "static/media/join2.png": "/PreciousPlasticSTL/static/media/join2.b5e72db5.png",
+    "static/media/ourSolution-img.jpg": "/PreciousPlasticSTL/static/media/ourSolution-img.1228d043.jpg",
     "static/media/recycle2.png": "/PreciousPlasticSTL/static/media/recycle2.08ccdd9c.png",
     "static/media/recycleBackground.png": "/PreciousPlasticSTL/static/media/recycleBackground.d5459b06.png",
     "static/media/shred.mp4": "/PreciousPlasticSTL/static/media/shred.ad263607.mp4",
-    "static/media/transform2.png": "/PreciousPlasticSTL/static/media/transform2.405c62c5.png"
+    "static/media/transform2.png": "/PreciousPlasticSTL/static/media/transform2.405c62c5.png",
+    "static/media/turtle.png": "/PreciousPlasticSTL/static/media/turtle.eee71906.png"
   },
   "entrypoints": [
     "static/js/runtime-main.18542632.js",
-    "static/js/2.d9e75d10.chunk.js",
-    "static/css/main.1e7bcf02.chunk.css",
-    "static/js/main.db26543a.chunk.js"
+    "static/js/2.4482bf96.chunk.js",
+    "static/css/main.df9e191e.chunk.css",
+    "static/js/main.7a633e53.chunk.js"
   ]
 }
