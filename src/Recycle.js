@@ -10,12 +10,14 @@ class Recycle extends Component {
             //html goes here
             <div id="recycle">
                 <div id="recycleMain">
-                    <img id="background" src={background} alt="ahh" />
                     <h1>Why Recycle?</h1>
                     {/* this section will have the animated picture
                         and some facts about why current methods aren't
                         enough or don't work and then also a button to
                         expand the page*/}
+                </div>
+                <div id="recycleTransition">
+                    <img id="background" src={background} alt="ahh" />
                 </div>
                 <div id="recycleExpansion">
                     {/* This would be more complicated. Have embeded map
