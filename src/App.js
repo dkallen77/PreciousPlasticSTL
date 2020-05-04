@@ -6,10 +6,6 @@ import Recycle from './Recycle';
 import OurSolution from './OurSolution';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render(){
     return (
       <div className="App">
@@ -21,7 +17,7 @@ class App extends Component {
         </div>
       </div>
     );
-}
+  }
 }
 
 export default App;
