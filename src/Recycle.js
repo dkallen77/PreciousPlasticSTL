@@ -26,8 +26,9 @@ class Recycle extends Component {
                                 <path d="M 10 0 L 5 10 L 0 0"></path>
                             </svg>  
                         </button>
-                        <h1>Is today a good day to Recycle?</h1>
-                        <RecycleForm />
+                        <div>
+                            <RecycleForm onSubmit={this.weather}/>
+                        </div>
                 </div>
                 <div id="recycleTransition">
                     <img id="background" src={background} alt="ahh" />
@@ -82,6 +83,29 @@ class Recycle extends Component {
               }
             }
         }
+    }
+
+    weather = (location) => {
+        var originalThis = this;
+        var postTodoRequest = new XMLHttpRequest();
+
+        postTodoRequest.onreadystatechange = function() {
+            if (this.readyState === 4 && this.status === 200) {
+                var response = JSON.parse(this.responseText);
+                console.log(response);
+            } 
+            else if (this.readyState === 4) {
+                console.log(this.responseText);
+            }
+        };
+
+        var latlong = location.split(",")
+
+        var URL = "https://api.openweathermap.org/data/2.5/weather?lat=" + latlong[0] + "&lon=" + latlong[1];
+        URL += "&units=imperial&appid=3e2b67030de0a8889e8fc5a17aac4aad";
+
+        postTodoRequest.open("GET", URL, true);
+        postTodoRequest.send();
     }
 }
 
