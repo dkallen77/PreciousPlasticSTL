@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/PreciousPlasticSTL/static/css/main.0807aa39.chunk.css",
-    "main.js": "/PreciousPlasticSTL/static/js/main.cf3ac0ef.chunk.js",
-    "main.js.map": "/PreciousPlasticSTL/static/js/main.cf3ac0ef.chunk.js.map",
+    "main.js": "/PreciousPlasticSTL/static/js/main.32e75f75.chunk.js",
+    "main.js.map": "/PreciousPlasticSTL/static/js/main.32e75f75.chunk.js.map",
     "runtime-main.js": "/PreciousPlasticSTL/static/js/runtime-main.18542632.js",
     "runtime-main.js.map": "/PreciousPlasticSTL/static/js/runtime-main.18542632.js.map",
     "static/js/2.5c4dc512.chunk.js": "/PreciousPlasticSTL/static/js/2.5c4dc512.chunk.js",
     "static/js/2.5c4dc512.chunk.js.map": "/PreciousPlasticSTL/static/js/2.5c4dc512.chunk.js.map",
     "index.html": "/PreciousPlasticSTL/index.html",
-    "precache-manifest.2cdcc6e1cc81b5fed0b72b15485b07ad.js": "/PreciousPlasticSTL/precache-manifest.2cdcc6e1cc81b5fed0b72b15485b07ad.js",
+    "precache-manifest.f27c4ecc54cfb48b9e049bfd2e7e0a31.js": "/PreciousPlasticSTL/precache-manifest.f27c4ecc54cfb48b9e049bfd2e7e0a31.js",
     "service-worker.js": "/PreciousPlasticSTL/service-worker.js",
     "static/css/main.0807aa39.chunk.css.map": "/PreciousPlasticSTL/static/css/main.0807aa39.chunk.css.map",
     "static/js/2.5c4dc512.chunk.js.LICENSE.txt": "/PreciousPlasticSTL/static/js/2.5c4dc512.chunk.js.LICENSE.txt",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.18542632.js",
     "static/js/2.5c4dc512.chunk.js",
     "static/css/main.0807aa39.chunk.css",
-    "static/js/main.cf3ac0ef.chunk.js"
+    "static/js/main.32e75f75.chunk.js"
   ]
 }
