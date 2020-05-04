@@ -57,7 +57,7 @@ class AboutUs extends Component {
     render(){
         return (
             <div className="AboutUs">
-                <a name="aboutus" className="page-start-aboutus">About Us</a>
+                <a name="aboutus" className="page-start-aboutus"></a>
                     <div id="aboutUsMain">
                         <h1>About Us</h1>
                         <br/>
