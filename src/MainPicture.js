@@ -25,32 +25,31 @@ class MainPicture extends Component {
             function frame() {
                 if (rot === 180) {
                     clearInterval(id);
-                    var hiddenPic = hidden.src;
-                    if(this.state.pic == 0){  //Join
+                    if(this.state.pic === 0){  //Join
                         this.setState({pic:1});
                         shown.src=collect;
                         shown.alt="Collect";
                         return;
                     }
-                    if(this.state.pic == 1){  //Collect
+                    if(this.state.pic === 1){  //Collect
                         this.setState({pic:2});
                         shown.src=recycle;
                         shown.alt = "Recycle";
                         return;
                     }
-                    if(this.state.pic == 2){  //Recycle
+                    if(this.state.pic === 2){  //Recycle
                         this.setState({pic:3});
                         shown.src=transform;
                         shown.alt="Transform";
                         return;
                     }
-                    if(this.state.pic == 3){  //Transform
+                    if(this.state.pic === 3){  //Transform
                         this.setState({pic:4});
                         shown.src=community;
                         shown.alt="Community";
                         return;
                     }
-                    if(this.state.pic == 4){  //Community
+                    if(this.state.pic === 4){  //Community
                         this.setState({pic:0});
                         shown.src=join;
                         shown.alt="Join";
@@ -74,32 +73,31 @@ class MainPicture extends Component {
             function frame() {
                 if (rot === 180) {
                     clearInterval(id);
-                    var shownPic = shown.src;
-                    if(this.state.pic == 0){  //Join
+                    if(this.state.pic === 0){  //Join
                         this.setState({pic:1});
                         hidden.src=collect;
                         hidden.alt="Collect";
                         return;
                     }
-                    if(this.state.pic == 1){  //Collect
+                    if(this.state.pic === 1){  //Collect
                         this.setState({pic:2});
                         hidden.src=recycle;
                         hidden.alt="Recycle";
                         return;
                     }
-                    if(this.state.pic == 2){  //Recycle
+                    if(this.state.pic === 2){  //Recycle
                         this.setState({pic:3});
                         hidden.src=transform;
                         hidden.alt="Transform";
                         return;
                     }
-                    if(this.state.pic == 3){  //Transform
+                    if(this.state.pic === 3){  //Transform
                         this.setState({pic:4});
                         hidden.src=community;
                         hidden.alt="Community";
                         return;
                     }
-                    if(this.state.pic == 4){  //Community
+                    if(this.state.pic === 4){  //Community
                         this.setState({pic:0});
                         hidden.src=join;
                         hidden.alt="Join";
