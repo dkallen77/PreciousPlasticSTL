@@ -174,3 +174,24 @@ h2{
     display:block;
     margin:auto;
 }
+
+.ourSolution-blurb{
+   width: 75%;
+   text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: gray;
+    margin:auto;
+}
+
+.ourSolutionImg{
+    width:25%;
+    border-radius: 5%;
+    border: solid 2px rgb(255, 233, 111);
+}
+
+.img-container{
+    width:100%;
+    margin:auto;
+    text-align:center;
+}
