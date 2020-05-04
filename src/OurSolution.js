@@ -6,7 +6,9 @@ import cleanBottle from './img/clean_bottle.png';
 import shreddedBottle from './img/shredded_bottle.png';
 import shred from './img/shred.mp4';
 import inject from './img/inject.mp4';
-import background from "./recycleComponents/recycleBackground.png"
+import background from "./recycleComponents/recycleBackground.png";
+import ourSolutionImg from "./img/ourSolution-img.jpg";
+import turtle from './img/turtle.png';
 
 class OurSolution extends Component {
     constructor(props) {
@@ -145,10 +147,19 @@ class OurSolution extends Component {
                 
                     <div id="ourSolutionMain">
                         <h1>Our Solution</h1>
-                        {/* this section will have the animated picture
-                            and some facts about why current methods aren't
-                            enough or don't work and then also a button to
-                            expand the page*/}
+                        <br/>
+                        <div className="ourSolution-blurb">
+                            There are many schools and businesses in the St. Louis area that need help improving their recycling methods.
+                                We reached out to these places and asked them if we can collect their plastic to recycle ourselves. We built
+                                three machines that recycle the plastic for us. Using these machines we can turn recycled plastic into almost
+                                anything! Since we are handling the recycling process ourselves, we can make sure that the plastic is 
+                                properly cleaned and recycled, and no plastic gone into landfils.
+                            
+                        </div>
+                        <br/>
+                        <div className="img-container">
+                        <img src={ourSolutionImg} alt="Our Solution Main Image" className="ourSolutionImg"/>
+                        </div>
                     </div>
                         {/* This would be more complicated. Have embeded map
                             to show location and a button to trigger API to get
@@ -192,7 +203,7 @@ class OurSolution extends Component {
                     </div>
                     </div>
                     <div id="ourSolutionTransition">
-                        <img id="background-solution" src={background} alt="ahh" />
+                        <img id="background-solution" src={turtle} alt="ahh" />
                     </div>               
             </div>
         );
