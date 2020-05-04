@@ -13,4 +13,13 @@ form {
     position: relative;
         top: 200px;
         left: 0px;
+        font: inherit;
+        font-size: 25px;
 }
+
+#locationButton:hover {
+    color: rgb(255,233,111);
+    text-decoration: underline;
+}
+
+/* border-bottom: solid 2px rgb(255, 233, 111); */

@@ -36,13 +36,17 @@ h1 {
 button {
     outline: none;
     border: none;
-    background-color: white;
+    background-color: transparent;
     display: block;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
         left: calc(50% - 16px);
         bottom: 10px;
+}
+
+#expander {
+    z-index: 2;
 }
 
 button:hover {
@@ -54,4 +58,17 @@ svg {
     height: 32px;
     fill: none;
     stroke: black;
+}
+
+#weatherInfo {
+    display: none;
+    width: 50%;
+    position: relative;
+        top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, td {
+    font: inherit;
 }
