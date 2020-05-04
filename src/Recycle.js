@@ -55,7 +55,7 @@ class Recycle extends Component {
             var height = 0;
             var id = setInterval(frame, 0);
             function frame() {
-              if (height === 500) {
+              if (height === 586) {
                 clearInterval(id);
                 button.disabled = false;
               } 
@@ -68,7 +68,7 @@ class Recycle extends Component {
         }
         else {
             button.style.transform = "rotate(0deg)";
-            height = 500;
+            height = 586;
             id = setInterval(frame, 0);
             function frame() {
               if (height === 0) {
