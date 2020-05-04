@@ -26,8 +26,25 @@ class Recycle extends Component {
                                 <path d="M 10 0 L 5 10 L 0 0"></path>
                             </svg>  
                         </button>
-                        <div>
+                        <div id="form">
                             <RecycleForm onSubmit={this.weather}/>
+                        </div>
+                        <div id="weatherInfo">
+                            <h1>Seems like a great day to Recycle!</h1>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Temperature (<span>&#176;</span>F) is:</td>
+                                        <td>Feels-like (<span>&#176;</span>F) is:</td>
+                                        <td>Description:</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="temperature"></td>
+                                        <td id="feelsLike"></td>
+                                        <td id="description"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                 </div>
                 <div id="recycleTransition">
@@ -86,13 +103,20 @@ class Recycle extends Component {
     }
 
     weather = (location) => {
-        var originalThis = this;
         var postTodoRequest = new XMLHttpRequest();
 
         postTodoRequest.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
                 var response = JSON.parse(this.responseText);
                 console.log(response);
+                var temp = response.main.temp;
+                var feels = response.main.feels_like;
+                var description = response.weather[0].description;
+                document.getElementById("temperature").innerText = temp;
+                document.getElementById("feelsLike").innerText = feels;
+                document.getElementById("description").innerText = description;
+                document.getElementById("form").style.display = "none";
+                document.getElementById("weatherInfo").style.display = "block";
             } 
             else if (this.readyState === 4) {
                 console.log(this.responseText);
