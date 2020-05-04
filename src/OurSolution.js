@@ -144,7 +144,7 @@ class OurSolution extends Component {
     render(){
         return (
             <div className="OurSolution">
-                
+                <a name="oursolution" className="page-start-solution">Our Solution</a>
                     <div id="ourSolutionMain">
                         <h1>Our Solution</h1>
                         <br/>
