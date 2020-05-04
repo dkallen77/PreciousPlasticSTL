@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/PreciousPlasticSTL/precache-manifest.091fca7a515ab39b91e0ed65084506b4.js"
+  "/PreciousPlasticSTL/precache-manifest.6e1267ee377200e47d7c7a038bb8a17b.js"
 );
 
 self.addEventListener('message', (event) => {

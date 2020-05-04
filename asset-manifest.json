@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/PreciousPlasticSTL/static/css/main.dd58830b.chunk.css",
-    "main.js": "/PreciousPlasticSTL/static/js/main.b01b54af.chunk.js",
-    "main.js.map": "/PreciousPlasticSTL/static/js/main.b01b54af.chunk.js.map",
+    "main.css": "/PreciousPlasticSTL/static/css/main.0c3a7fa3.chunk.css",
+    "main.js": "/PreciousPlasticSTL/static/js/main.216abf6a.chunk.js",
+    "main.js.map": "/PreciousPlasticSTL/static/js/main.216abf6a.chunk.js.map",
     "runtime-main.js": "/PreciousPlasticSTL/static/js/runtime-main.18542632.js",
     "runtime-main.js.map": "/PreciousPlasticSTL/static/js/runtime-main.18542632.js.map",
     "static/js/2.d9e75d10.chunk.js": "/PreciousPlasticSTL/static/js/2.d9e75d10.chunk.js",
     "static/js/2.d9e75d10.chunk.js.map": "/PreciousPlasticSTL/static/js/2.d9e75d10.chunk.js.map",
     "index.html": "/PreciousPlasticSTL/index.html",
-    "precache-manifest.091fca7a515ab39b91e0ed65084506b4.js": "/PreciousPlasticSTL/precache-manifest.091fca7a515ab39b91e0ed65084506b4.js",
+    "precache-manifest.6e1267ee377200e47d7c7a038bb8a17b.js": "/PreciousPlasticSTL/precache-manifest.6e1267ee377200e47d7c7a038bb8a17b.js",
     "service-worker.js": "/PreciousPlasticSTL/service-worker.js",
-    "static/css/main.dd58830b.chunk.css.map": "/PreciousPlasticSTL/static/css/main.dd58830b.chunk.css.map",
+    "static/css/main.0c3a7fa3.chunk.css.map": "/PreciousPlasticSTL/static/css/main.0c3a7fa3.chunk.css.map",
     "static/js/2.d9e75d10.chunk.js.LICENSE.txt": "/PreciousPlasticSTL/static/js/2.d9e75d10.chunk.js.LICENSE.txt",
     "static/media/Precious-Plastic-Logo.png": "/PreciousPlasticSTL/static/media/Precious-Plastic-Logo.fa1e2c60.png",
     "static/media/clean.mp4": "/PreciousPlasticSTL/static/media/clean.76c880b8.mp4",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.18542632.js",
     "static/js/2.d9e75d10.chunk.js",
-    "static/css/main.dd58830b.chunk.css",
-    "static/js/main.b01b54af.chunk.js"
+    "static/css/main.0c3a7fa3.chunk.css",
+    "static/js/main.216abf6a.chunk.js"
   ]
 }
