@@ -9,54 +9,54 @@ class AboutUs extends Component {
       }
     }
 
-    expand = (event) => {
-        var button = document.getElementById("ourSolutionExpander");
-        document.getElementById("ourSolutionExpander").disabled = true;
-        var expansion = document.getElementById("ourSolutionExpansion");
-        var  expand = (this.state.expanded === false) ? true : false;
-        this.setState({
-            expanded: !(this.state.expanded)
-        });
-        //let's try for a good animation
+    // expand = (event) => {
+    //     var button = document.getElementById("ourSolutionExpander");
+    //     document.getElementById("ourSolutionExpander").disabled = true;
+    //     var expansion = document.getElementById("ourSolutionExpansion");
+    //     var  expand = (this.state.expanded === false) ? true : false;
+    //     this.setState({
+    //         expanded: !(this.state.expanded)
+    //     });
+    //     //let's try for a good animation
         
-        if (expand) {
-            button.style.transform = "rotate(180deg)";
-            var height = 0;
-            var id = setInterval(frame, 0);
-            function frame() {
-              if (height === 586) {
-                clearInterval(id);
-                button.disabled = false;
-              } 
-              else {
-                height++;
-                expansion.style.height = height + 'px';
-                button.style.bottom = "10px";
-              }
-            }
-        }
-        else {
-            button.style.transform = "rotate(0deg)";
-            height = 586;
-            id = setInterval(frame, 0);
-            function frame() {
-              if (height === 0) {
-                clearInterval(id);
-                button.disabled = false;
-              } 
-              else {
-                height--;
-                expansion.style.height = height + 'px';
-                button.style.bottom = "10px";
-              }
-            }
-        }
-    }
+    //     if (expand) {
+    //         button.style.transform = "rotate(180deg)";
+    //         var height = 0;
+    //         var id = setInterval(frame, 0);
+    //         function frame() {
+    //           if (height === 586) {
+    //             clearInterval(id);
+    //             button.disabled = false;
+    //           } 
+    //           else {
+    //             height++;
+    //             expansion.style.height = height + 'px';
+    //             button.style.bottom = "10px";
+    //           }
+    //         }
+    //     }
+    //     else {
+    //         button.style.transform = "rotate(0deg)";
+    //         height = 586;
+    //         id = setInterval(frame, 0);
+    //         function frame() {
+    //           if (height === 0) {
+    //             clearInterval(id);
+    //             button.disabled = false;
+    //           } 
+    //           else {
+    //             height--;
+    //             expansion.style.height = height + 'px';
+    //             button.style.bottom = "10px";
+    //           }
+    //         }
+    //     }
+    // }
 
     render(){
         return (
             <div className="OurSolution">
-                <a name="oursolution" className="page-start-solution">Our Solution</a>
+                {/* <a name="oursolution" className="page-start-solution">Our Solution</a>
                     <div id="ourSolutionMain">
                         <h1>Our Solution</h1>
                         <br/>
@@ -77,7 +77,7 @@ class AboutUs extends Component {
                             to show location and a button to trigger API to get
                             weather information. Put up the current information  */}
                             
-                            <div id="ourSolutionExpansion">
+                            {/* <div id="ourSolutionExpansion">
                             <button id="ourSolutionExpander" onClick={this.expand}>
                                 <svg  viewBox="-0.5 -0.5 11 11">
                                     <path d="M 10 0 L 5 10 L 0 0"></path>
@@ -116,7 +116,7 @@ class AboutUs extends Component {
                     </div>
                     <div id="ourSolutionTransition">
                         <img id="background-solution" src={turtle} alt="ahh" />
-                    </div>               
+                    </div>                */} */}
             </div>
         );
     }
