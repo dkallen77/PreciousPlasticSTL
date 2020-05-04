@@ -1,0 +1,9 @@
+#recycle {
+    display: block;
+    width: 100%;
+    height: 700px;
+}
+
+#recycleExpansion {
+    display: none;
+}

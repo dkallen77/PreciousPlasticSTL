@@ -99,17 +99,18 @@ class MainPicture extends Component {
   
     render(){
         return (
-            <div className="MainPicture" id="MainPicture" onClick={this.RotateImgs}>
-                <div className="title">
-                    Precious Plastic STL
+            <div className="box">
+                <div className="MainPicture" id="MainPicture" onClick={this.RotateImgs}>
+                    <div className="title">
+                        Precious Plastic STL
+                    </div>
+                    <div className="title-media">
+                        Precious Plastic STL
+                    </div>
+                        <img src={join} alt="Join" className="shown-pic" id="shown-pic"/>
+                        <img src={collect} alr="Collect" className="hidden-pic" id="hidden-pic"/>
                 </div>
-                <div className="title-media">
-                    Precious Plastic STL
-                </div>
-                    <img src={join} alt="Join" className="shown-pic" id="shown-pic"/>
-                    <img src={collect} alr="Collect" className="hidden-pic" id="hidden-pic"/>
             </div>
-
         );
     }
 }

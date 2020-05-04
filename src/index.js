@@ -4,6 +4,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
+    <meta name="viewport" content="width=device-width" />
     <App />
   </React.StrictMode>,
   document.getElementById('root')

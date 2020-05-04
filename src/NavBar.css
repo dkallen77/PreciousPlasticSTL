@@ -1,6 +1,6 @@
 .logo{
     float:left;
-    margin-left:5%;
+    margin-left: 5%;
 }
 
 .NavBar{
@@ -9,53 +9,28 @@
     text-align: center;
     width: 100%;
     position: fixed;
-        right:1px;
-        top: 1px;
+        right:0px;
+        top: 0px;
     border-bottom: solid 2px rgb(255, 233, 111);
-    height:90px;
+    height: 90px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     z-index: 2;
     background-color: white;
 }
 
-.NavBar{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-        right:1px;
-        top: 1px;
-    border-bottom: solid 2px rgb(255, 233, 111);
-    height:90px;
-}
-
 .logo-img{
     width: 75px;
-    position: relative;
-        top: 5px;
-}
-
-.logo-img-mobile{
-    width: 50px;
-    padding-top: 10px;
-    padding-left: 10px;
+    margin-top: 5px;
 }
 
 .right-nav{
     float:right;
     margin-right: 5%;
-    position: relative;
-        bottom: 25px;
 }
 
 .menu-options{
     margin-left: 50px;
-}
-
-.menu-options-mobile{
-    padding-bottom: 10px;
 }
 
 .menu-option:hover{
@@ -76,39 +51,45 @@ table{
     width: 20%;
 }
 
-.right-mobile{
-    width: 10%;
-    font-size: 11px;
-    position: relative;
-        top: 14px;
-        right: 10px;
-}
-
 .left{
     width: 20%;
+}
+
+.center-nav {
+    position: relative;
+    right: 25px;
 }
 
 .left-mobile{
     width: 10%;
 }
 
-.center-nav{
+.right-mobile{
+    width: 10%;
+    font-size: 11px;
     position: relative;
-        bottom: 30px;
-    font-size: 14px;
+        top: 5px;
+        right: 10px;
 }
 
 .center-nav-mobile{
-    position: relative;
-        bottom: 40px;
     font-size: 11px;
+    position: relative;
+        top: 10px;
 }
 
-/* th{
-    border: solid black 2px;
-} */
+.logo-img-mobile{
+    width: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
 
-@media screen and (min-width: 450px) { 
+.menu-options-mobile{
+    padding-bottom: 10px;
+}
+
+
+@media screen and (min-width: 710px) { 
     .logo-img-mobile{
         display: none;
     }
@@ -126,7 +107,7 @@ table{
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 709px) {
     .logo-img{
         display:none;
     }

@@ -49,11 +49,11 @@ class OurSolution extends Component {
                     <img src={dirtyBottle} ondragstart={(e) => this.dragStart(e)}/>
                 </div>
                 <div className="droptarget" ondrop={(e) => this.drop(e)} ondragover={(e) => this.allowDrop(e)}></div> */}
-                <video id="cleanVid" width="1600" height="880" onClick={this.playVidClean}>
+                <video id="cleanVid"  onClick={this.playVidClean}>
                     <source src={clean} type="video/mp4"/>
                     Your browser does not support HTML5 video.
                 </video>
-                <video id="shredVid" width="1600" height="880" onClick={this.playVidShred}>
+                <video id="shredVid"  onClick={this.playVidShred}>
                     <source src={shred} type="video/mp4"/>
                     Your browser does not support HTML5 video.
                 </video>

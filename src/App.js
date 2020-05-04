@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import NavBar from './NavBar';
 import MainPicture from './MainPicture';
+import Recycle from './Recycle';
 import OurSolution from './OurSolution';
 
 class App extends Component {
@@ -13,8 +14,11 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <MainPicture />
-        <OurSolution />
+        <div className="content">
+          <MainPicture />
+          <Recycle />
+          <OurSolution />
+        </div>
       </div>
     );
 }
