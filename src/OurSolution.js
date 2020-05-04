@@ -6,12 +6,14 @@ import cleanBottle from './img/clean_bottle.png';
 import shreddedBottle from './img/shredded_bottle.png';
 import shred from './img/shred.mp4';
 import inject from './img/inject.mp4';
+import background from "./recycleComponents/recycleBackground.png"
 
 class OurSolution extends Component {
     constructor(props) {
       super(props);
       this.state={
-          step:0
+          step:0,
+          expanded: false
       }
     }
 
@@ -84,34 +86,100 @@ class OurSolution extends Component {
         document.getElementById("replay").style.display="none";
     }
 
+    expand = (event) => {
+        var button = document.getElementById("expander");
+        document.getElementById("expander").disabled = true;
+        var expansion = document.getElementById("ourSolutionExpansion");
+        var  expand = (this.state.expanded === false) ? true : false;
+        this.setState({
+            expanded: !(this.state.expanded)
+        });
+        //let's try for a good animation
+        
+        if (expand) {
+            button.style.transform = "rotate(180deg)";
+            var height = 0;
+            var id = setInterval(frame, 0);
+            function frame() {
+              if (height === 586) {
+                clearInterval(id);
+                button.disabled = false;
+              } 
+              else {
+                height++;
+                expansion.style.height = height + 'px';
+                button.style.bottom = "10px";
+              }
+            }
+        }
+        else {
+            button.style.transform = "rotate(0deg)";
+            height = 586;
+            id = setInterval(frame, 0);
+            function frame() {
+              if (height === 0) {
+                clearInterval(id);
+                button.disabled = false;
+              } 
+              else {
+                height--;
+                expansion.style.height = height + 'px';
+                button.style.bottom = "10px";
+              }
+            }
+        }
+    }
+
     render(){
         return (
             <div className="OurSolution">
-                <div id="drag1" draggable="true" onDragStart={(e) => this.drag(e)}>
-                    <img src={dirtyBottle} alt="Dirty Water Bottle" className="dragImg" id="dirty-bottle"/>
-                    <img src={cleanBottle} alt="Clean Water Bottle" className="dragImg" id="clean-bottle"/>
-                    <img src={shreddedBottle} alt="Shredded Water Bottle" className="dragImg" id="shredded-bottle"/>
-                </div>
                 
-                <div className="repaly" id="replay" onClick={this.replay}>
-                    Replay
-                </div>
+                    <div id="ourSolutionMain">
+                        <h1>Our Solution</h1>
+                        {/* this section will have the animated picture
+                            and some facts about why current methods aren't
+                            enough or don't work and then also a button to
+                            expand the page*/}
+                    </div>
+                        {/* This would be more complicated. Have embeded map
+                            to show location and a button to trigger API to get
+                            weather information. Put up the current information  */}
+                            <button id="expander" onClick={this.expand}>
+                                <svg  viewBox="-0.5 -0.5 11 11">
+                                    <path d="M 10 0 L 5 10 L 0 0"></path>
+                                </svg>  
+                            </button>
+                            <h1>How Do Our Machines Work?</h1>
+                            <div id="ourSolutionExpansion">
+                        <div id="drag1" draggable="true" onDragStart={(e) => this.drag(e)}>
+                        <img src={dirtyBottle} alt="Dirty Water Bottle" className="dragImg" id="dirty-bottle"/>
+                        <img src={cleanBottle} alt="Clean Water Bottle" className="dragImg" id="clean-bottle"/>
+                        <img src={shreddedBottle} alt="Shredded Water Bottle" className="dragImg" id="shredded-bottle"/>
+                    </div>
+                    
+                    <div className="replay" id="replay" onClick={this.replay}>
+                        Replay
+                    </div>
 
-                <video id="cleanVid" className="cleanVid" onEnded={this.cleanVidEnded}>
-                    <source src={clean} type="video/mp4"/>
-                    Your browser does not support HTML5 video.
-                </video>
-                <div id="div1" className="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
-                <video id="shredVid" className="shredVid" onEnded={this.shredVidEnded}>
-                    <source src={shred} type="video/mp4"/>
-                    Your browser does not support HTML5 video.
-                </video>
-                <div id="div2" className="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
-                <video id="injectVid" className="injectVid" onEnded={this.injectVidEnded}>
-                    <source src={inject} type="video/mp4"/>
-                    Your browser does not support HTML5 video.
-                </video>
-                <div id="div3" className="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
+                    <video id="cleanVid" className="cleanVid" onEnded={this.cleanVidEnded}>
+                        <source src={clean} type="video/mp4"/>
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <div id="div1" className="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
+                    <video id="shredVid" className="shredVid" onEnded={this.shredVidEnded}>
+                        <source src={shred} type="video/mp4"/>
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <div id="div2" className="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
+                    <video id="injectVid" className="injectVid" onEnded={this.injectVidEnded}>
+                        <source src={inject} type="video/mp4"/>
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <div id="div3" className="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
+                    </div>
+                    <div id="ourSolutionTransition">
+                        {/* <img id="background" src={background} alt="ahh" /> */}
+                    </div>               
             </div>
         );
     }
