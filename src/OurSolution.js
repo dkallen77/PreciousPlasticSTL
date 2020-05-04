@@ -26,7 +26,7 @@ class OurSolution extends Component {
     drop = (ev) => {
         ev.preventDefault();
         document.getElementById("div1").style.display= "none";
-        if(this.state.step == 0){
+        if(this.state.step === 0){
             var vid = document.getElementById("cleanVid");
             vid.play();
             var draggable = document.getElementById("dirty-bottle");
@@ -34,18 +34,18 @@ class OurSolution extends Component {
             document.getElementById("div1").style.display= "none";
             this.setState({step:1});            
         }
-        else if(this.state.step == 1){
-            var vid = document.getElementById("shredVid");
+        else if(this.state.step === 1){
+            vid = document.getElementById("shredVid");
             vid.play();
-            var draggable = document.getElementById("clean-bottle");
+            draggable = document.getElementById("clean-bottle");
             draggable.style.display = "none";
             document.getElementById("div2").style.display= "none";
             this.setState({step:2});
         }
-        else if(this.state.step == 2){
-            var vid = document.getElementById("injectVid");
+        else if(this.state.step === 2){
+            vid = document.getElementById("injectVid");
             vid.play();
-            var draggable = document.getElementById("shredded-bottle");
+            draggable = document.getElementById("shredded-bottle");
             draggable.style.display = "none";
             document.getElementById("div3").style.display= "none";
             this.setState({step:3});
@@ -101,17 +101,17 @@ class OurSolution extends Component {
                     <source src={clean} type="video/mp4"/>
                     Your browser does not support HTML5 video.
                 </video>
-                <div id="div1" class="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
+                <div id="div1" className="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
                 <video id="shredVid" className="shredVid" onEnded={this.shredVidEnded}>
                     <source src={shred} type="video/mp4"/>
                     Your browser does not support HTML5 video.
                 </video>
-                <div id="div2" class="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
+                <div id="div2" className="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
                 <video id="injectVid" className="injectVid" onEnded={this.injectVidEnded}>
                     <source src={inject} type="video/mp4"/>
                     Your browser does not support HTML5 video.
                 </video>
-                <div id="div3" class="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
+                <div id="div3" className="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
             </div>
         );
     }

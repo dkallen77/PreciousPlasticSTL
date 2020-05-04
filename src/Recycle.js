@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './recycleComponents/Recycle.css'
 import background from "./recycleComponents/recycleBackground.png"
 import RecycleForm from "./recycleComponents/RecycleForm"
-import { wait } from '@testing-library/react';
 
 class Recycle extends Component {
 
@@ -69,8 +68,8 @@ class Recycle extends Component {
         }
         else {
             button.style.transform = "rotate(0deg)";
-            var height = 500;
-            var id = setInterval(frame, 0);
+            height = 500;
+            id = setInterval(frame, 0);
             function frame() {
               if (height === 0) {
                 clearInterval(id);
