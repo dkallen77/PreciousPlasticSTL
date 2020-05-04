@@ -50,7 +50,7 @@ class OurSolution extends Component {
             draggable = document.getElementById("shredded-bottle");
             draggable.style.display = "none";
             document.getElementById("div3").style.display= "none";
-            this.setState({step:3});
+            this.setState({step:0});
         }
     }
 
@@ -79,7 +79,16 @@ class OurSolution extends Component {
     }
 
     replay(){
-        document.getElementById("cleanVid").style.display="block";
+        var clean = document.getElementById("cleanVid");
+        clean.load();
+        clean.style.display="block";
+
+        var shred = document.getElementById("shredVid");
+        shred.load();
+
+        var inject = document.getElementById("injectVid");
+        inject.load();
+
         document.getElementById("injectVid").style.display="none";
         document.getElementById("div1").style.display="block";
         document.getElementById("dirty-bottle").style.display="block";
@@ -87,8 +96,8 @@ class OurSolution extends Component {
     }
 
     expand = (event) => {
-        var button = document.getElementById("expander");
-        document.getElementById("expander").disabled = true;
+        var button = document.getElementById("ourSolutionExpander");
+        document.getElementById("ourSolutionExpander").disabled = true;
         var expansion = document.getElementById("ourSolutionExpansion");
         var  expand = (this.state.expanded === false) ? true : false;
         this.setState({
@@ -144,22 +153,26 @@ class OurSolution extends Component {
                         {/* This would be more complicated. Have embeded map
                             to show location and a button to trigger API to get
                             weather information. Put up the current information  */}
-                            <button id="expander" onClick={this.expand}>
+                            
+                            <div id="ourSolutionExpansion">
+                            <button id="ourSolutionExpander" onClick={this.expand}>
                                 <svg  viewBox="-0.5 -0.5 11 11">
                                     <path d="M 10 0 L 5 10 L 0 0"></path>
                                 </svg>  
                             </button>
                             <h1>How Do Our Machines Work?</h1>
-                            <div id="ourSolutionExpansion">
-                        <div id="drag1" draggable="true" onDragStart={(e) => this.drag(e)}>
-                        <img src={dirtyBottle} alt="Dirty Water Bottle" className="dragImg" id="dirty-bottle"/>
-                        <img src={cleanBottle} alt="Clean Water Bottle" className="dragImg" id="clean-bottle"/>
-                        <img src={shreddedBottle} alt="Shredded Water Bottle" className="dragImg" id="shredded-bottle"/>
-                    </div>
-                    
-                    <div className="replay" id="replay" onClick={this.replay}>
-                        Replay
-                    </div>
+                            <h2>Click and drag the plastic water bottle to find out how our machines work</h2>
+                    <div className="interative">
+                        <div className="draggable">
+                            <div id="drag1" draggable="true" onDragStart={(e) => this.drag(e)}>
+                            <img src={dirtyBottle} alt="Dirty Water Bottle" className="dragImg" id="dirty-bottle"/>
+                            <img src={cleanBottle} alt="Clean Water Bottle" className="dragImg" id="clean-bottle"/>
+                            <img src={shreddedBottle} alt="Shredded Water Bottle" className="dragImg" id="shredded-bottle"/>
+                            </div>
+                            <div className="replay" id="replay" onClick={this.replay}>
+                                Replay
+                            </div>
+                        </div>
 
                     <video id="cleanVid" className="cleanVid" onEnded={this.cleanVidEnded}>
                         <source src={clean} type="video/mp4"/>
@@ -177,11 +190,23 @@ class OurSolution extends Component {
                     </video>
                     <div id="div3" className="droptarget" onDrop={(e) => this.drop(e)} onDragOver={(e) => this.allowDrop(e)}></div>
                     </div>
+                    </div>
                     <div id="ourSolutionTransition">
-                        {/* <img id="background" src={background} alt="ahh" /> */}
+                        <img id="background-solution" src={background} alt="ahh" />
                     </div>               
             </div>
         );
+    }
+
+    componentDidMount(){
+        var clean = document.getElementById("cleanVid");
+        clean.load();
+
+        var shred = document.getElementById("shredVid");
+        shred.load();
+
+        var inject = document.getElementById("injectVid");
+        inject.load();
     }
 }
 
