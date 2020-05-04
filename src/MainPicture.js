@@ -10,7 +10,8 @@ class MainPicture extends Component {
     constructor(props) {
       super(props);
       this.state={
-          flipped: false
+          flipped: false,
+          pic: 1
       }
     }
 
@@ -20,30 +21,40 @@ class MainPicture extends Component {
             var shown = document.getElementById("shown-pic");
             var hidden = document.getElementById("hidden-pic");
             var rot = 0;
-            var id = setInterval(frame, 5);
+            var id = setInterval(frame.bind(this), 5);
             function frame() {
                 if (rot === 180) {
                     clearInterval(id);
                     var hiddenPic = hidden.src;
-                    if(hiddenPic === join){  //Join
+                    if(this.state.pic == 0){  //Join
+                        this.setState({pic:1});
                         shown.src=collect;
                         shown.alt="Collect";
+                        return;
                     }
-                    if(hiddenPic === collect){  //Collect
+                    if(this.state.pic == 1){  //Collect
+                        this.setState({pic:2});
                         shown.src=recycle;
                         shown.alt = "Recycle";
+                        return;
                     }
-                    if(hiddenPic === recycle){  //Recycle
+                    if(this.state.pic == 2){  //Recycle
+                        this.setState({pic:3});
                         shown.src=transform;
                         shown.alt="Transform";
+                        return;
                     }
-                    if(hiddenPic === transform){  //Transform
+                    if(this.state.pic == 3){  //Transform
+                        this.setState({pic:4});
                         shown.src=community;
                         shown.alt="Community";
+                        return;
                     }
-                    if(hiddenPic === community){  //Community
+                    if(this.state.pic == 4){  //Community
+                        this.setState({pic:0});
                         shown.src=join;
-                        shown.alt="Join"
+                        shown.alt="Join";
+                        return;
                     }
                     return;
                 } else {
@@ -59,30 +70,40 @@ class MainPicture extends Component {
             shown = document.getElementById("shown-pic");
             hidden = document.getElementById("hidden-pic");
             rot = 0;
-            id = setInterval(frame, 5);
+            id = setInterval(frame.bind(this), 5);
             function frame() {
                 if (rot === 180) {
                     clearInterval(id);
                     var shownPic = shown.src;
-                    if(shownPic === join){  //Join
+                    if(this.state.pic == 0){  //Join
+                        this.setState({pic:1});
                         hidden.src=collect;
                         hidden.alt="Collect";
+                        return;
                     }
-                    if(shownPic === collect){  //Collect
+                    if(this.state.pic == 1){  //Collect
+                        this.setState({pic:2});
                         hidden.src=recycle;
                         hidden.alt="Recycle";
+                        return;
                     }
-                    if(shownPic === recycle){  //Recycle
+                    if(this.state.pic == 2){  //Recycle
+                        this.setState({pic:3});
                         hidden.src=transform;
                         hidden.alt="Transform";
+                        return;
                     }
-                    if(shownPic === transform){  //Transform
+                    if(this.state.pic == 3){  //Transform
+                        this.setState({pic:4});
                         hidden.src=community;
                         hidden.alt="Community";
+                        return;
                     }
-                    if(shownPic === community){  //Community
+                    if(this.state.pic == 4){  //Community
+                        this.setState({pic:0});
                         hidden.src=join;
                         hidden.alt="Join";
+                        return;
                     }
                     return;
                 } else {
