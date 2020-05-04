@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './recycleComponents/Recycle.css'
 import background from "./recycleComponents/recycleBackground.png"
 import RecycleForm from "./recycleComponents/RecycleForm"
+import recycleMainImg from "./img/recycle-main.jpeg";
 
 class Recycle extends Component {
 
@@ -10,12 +11,33 @@ class Recycle extends Component {
         return(
             //html goes here
             <div id="recycle">
+                <a name="recycle" className="page-start-recycle">Recycle</a>
                 <div id="recycleMain">
                     <h1>Why Recycle?</h1>
-                    {/* this section will have the animated picture
-                        and some facts about why current methods aren't
-                        enough or don't work and then also a button to
-                        expand the page*/}
+                    <br/>
+                    <div className="recycle-blurb">
+                        Plastic is one of the most damaging materials to earth. When not properly recycled it
+                        ends up in the ocean or in landfils where it hurts many animals and habitats. A lot of 
+                        the plastic that ends up here is contaminated. When animals like birds and fish try to 
+                        consume this plastic not only does it hurt them, but it can also contaminate our food supply. Unlike a
+                        lot of other landfil items, plastic takes extremely long to biodegrade. It takes plastic 
+                        450 to 1000 years to completely biodegrade. We are producing plastic at a much faster rate
+                        than it can biodegrade.
+                    </div>
+                    <br/>
+                        <div className="img-container">
+                        <iframe title='Tons of plastic waste dumped in oceans' src='https://www.theworldcounts.com/embed/challenges/109?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14'></iframe>
+                        <iframe title='Great Pacific Garbage Patch' src='https://www.theworldcounts.com/embed/challenges/6?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14'></iframe>
+                        <iframe title='Number of plastic bags produced' src='https://www.theworldcounts.com/embed/challenges/105?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14'></iframe>
+                        </div>
+                    <br/>
+                    <div className="recycle-blurb">
+                        Even if you put your plastic in the recycling bin, there is no gaurantee that the plastic will be recycled.
+                        30% of the plastic thrown in the recycling bin is not actually recycled either because it is too small, contaminated
+                        or does not provide good economic value. This does not mean you should stop recycling your plastic, but it does mean
+                        you should be knowledgable about your recycling system so you know the best steps to take to being the most environmentally
+                        friendly.
+                    </div>
                 </div>
                 <div id="recycleExpansion">
                     {/* This would be more complicated. Have embeded map
@@ -31,7 +53,7 @@ class Recycle extends Component {
                         </div>
                         <div id="weatherInfo">
                             <h1>Seems like a great day to Recycle!</h1>
-                            <table>
+                            <table className="tableinfo">
                                 <tbody>
                                     <tr>
                                         <td>Temperature (<span>&#176;</span>F) is:</td>

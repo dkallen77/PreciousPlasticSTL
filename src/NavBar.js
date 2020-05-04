@@ -26,24 +26,24 @@ function NavBar() {
             </td>
             <td>
               <div className="center-nav">
-                <span className="menu-options"><a href="index.html" className="menu-option">RECYCLING</a></span>
+                <span className="menu-options"><a href="index.html#recycle" className="menu-option">RECYCLING</a></span>
                 <span className="menu-options"><a href="index.html#oursolution" className="menu-option">OUR SOLUTION</a></span>
                 <span className="menu-options"><a href="index.html" className="menu-option">ABOUT US</a></span>
               </div>
               <div className="center-nav-mobile">
-                <div className="menu-options-mobile"><a href="index.html" className="menu-option">RECYCLING</a></div>
+                <div className="menu-options-mobile"><a href="index.html#recycle" className="menu-option">RECYCLING</a></div>
                 <div className="menu-options-mobile"><a href="index.html#oursolution" className="menu-option">OUR SOLUTION</a></div>
                 <div className="menu-options-mobile"><a href="index.html" className="menu-option">ABOUT US</a></div>
               </div>
             </td>
             <td className="right">
               <div className="right-nav">
-                <span className="menu-options"><a href="index.html" className="menu-option">CONTACT US</a></span>
+                <span className="menu-options"><a href="index.html" className="menu-option"></a></span>
               </div>
             </td>
             <td className="right-mobile">
               <div className="right-nav">
-                <span><a href="index.html" className="menu-option">CONTACT US</a></span>
+                <span><a href="index.html" className="menu-option"></a></span>
               </div>
             </td>
           </tr>

@@ -129,6 +129,7 @@ class MainPicture extends Component {
                         <img src={join} alt="Join" className="shown-pic" id="shown-pic"/>
                         <img src={collect} alt="Collect" className="hidden-pic" id="hidden-pic"/>
                 </div>
+                <a name="oursolution" className="page-start-solution">Our Solution</a>
             </div>
         );
     }

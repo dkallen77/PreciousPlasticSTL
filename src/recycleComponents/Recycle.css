@@ -72,3 +72,36 @@ svg {
 table, td {
     font: inherit;
 }
+
+.recycle-blurb{
+    width: 75%;
+    text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 20px;
+     color: gray;
+     margin:auto;
+ }
+
+ .recycleImg{
+    width:25%;
+    border-radius: 5%;
+    border: solid 2px rgb(255, 233, 111);
+}
+
+.img-container{
+    width:100%;
+    margin:auto;
+    text-align:center;
+}
+
+/* .page-start-recycle{
+    position:relative;
+        bottom: 200px;
+    /* z-index: -2; */
+
+
+iframe{
+    border: none;
+    height:100;
+    width:300;
+}
