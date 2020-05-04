@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PreciousPlasticSTL/static/css/main.5890edc2.chunk.css",
-    "main.js": "/PreciousPlasticSTL/static/js/main.81c50e3a.chunk.js",
-    "main.js.map": "/PreciousPlasticSTL/static/js/main.81c50e3a.chunk.js.map",
+    "main.css": "/PreciousPlasticSTL/static/css/main.08778069.chunk.css",
+    "main.js": "/PreciousPlasticSTL/static/js/main.2f45c51e.chunk.js",
+    "main.js.map": "/PreciousPlasticSTL/static/js/main.2f45c51e.chunk.js.map",
     "runtime-main.js": "/PreciousPlasticSTL/static/js/runtime-main.18542632.js",
     "runtime-main.js.map": "/PreciousPlasticSTL/static/js/runtime-main.18542632.js.map",
-    "static/js/2.21c39e5f.chunk.js": "/PreciousPlasticSTL/static/js/2.21c39e5f.chunk.js",
-    "static/js/2.21c39e5f.chunk.js.map": "/PreciousPlasticSTL/static/js/2.21c39e5f.chunk.js.map",
+    "static/js/2.2255ca1a.chunk.js": "/PreciousPlasticSTL/static/js/2.2255ca1a.chunk.js",
+    "static/js/2.2255ca1a.chunk.js.map": "/PreciousPlasticSTL/static/js/2.2255ca1a.chunk.js.map",
     "index.html": "/PreciousPlasticSTL/index.html",
-    "precache-manifest.23abc287fafd3f756ba702acc04b7255.js": "/PreciousPlasticSTL/precache-manifest.23abc287fafd3f756ba702acc04b7255.js",
+    "precache-manifest.86ab74d7fdf4ead3fb92a9aca3fd8315.js": "/PreciousPlasticSTL/precache-manifest.86ab74d7fdf4ead3fb92a9aca3fd8315.js",
     "service-worker.js": "/PreciousPlasticSTL/service-worker.js",
-    "static/css/main.5890edc2.chunk.css.map": "/PreciousPlasticSTL/static/css/main.5890edc2.chunk.css.map",
-    "static/js/2.21c39e5f.chunk.js.LICENSE.txt": "/PreciousPlasticSTL/static/js/2.21c39e5f.chunk.js.LICENSE.txt",
+    "static/css/main.08778069.chunk.css.map": "/PreciousPlasticSTL/static/css/main.08778069.chunk.css.map",
+    "static/js/2.2255ca1a.chunk.js.LICENSE.txt": "/PreciousPlasticSTL/static/js/2.2255ca1a.chunk.js.LICENSE.txt",
     "static/media/Precious-Plastic-Logo.png": "/PreciousPlasticSTL/static/media/Precious-Plastic-Logo.fa1e2c60.png",
     "static/media/clean.mp4": "/PreciousPlasticSTL/static/media/clean.76c880b8.mp4",
     "static/media/collect2.png": "/PreciousPlasticSTL/static/media/collect2.955e22d4.png",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.18542632.js",
-    "static/js/2.21c39e5f.chunk.js",
-    "static/css/main.5890edc2.chunk.css",
-    "static/js/main.81c50e3a.chunk.js"
+    "static/js/2.2255ca1a.chunk.js",
+    "static/css/main.08778069.chunk.css",
+    "static/js/main.2f45c51e.chunk.js"
   ]
 }
