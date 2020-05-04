@@ -3,8 +3,53 @@
     display: block;
 }
 
+#div1 {
+    width: 125px;
+    height: 70px;
+    padding: 10px;
+    position:relative;
+        bottom: 275px;
+        left: 175px;
+    z-index:2;
+  }
+
+  #div2 {
+    width: 125px;
+    height: 125px;
+    padding: 10px;
+    /* border: 1px solid #aaaaaa; */
+    position:relative;
+        bottom: 250px;
+        left: 175px;
+    z-index:2;
+    display:none;
+  }
+
+  #div3 {
+    width: 125px;
+    height: 200px;
+    padding: 10px;
+    /* border: 1px solid #aaaaaa; */
+    position:relative;
+        bottom: 300px;
+        left: 175px;
+    z-index:2;
+    display:none;
+  }
+
+.dragImg{
+    width:50px;
+    z-index:2;
+    position: relative;
+        left:200px;
+        top: 50px;
+}
+
 .cleanVid{
-    display: inline;    
+    display: inline;
+    position: relative;
+        bottom:50px;
+    z-index:-1;
 }
 
 .shredVid{
@@ -14,17 +59,15 @@
 .injectVid{
     display:none;
 }
-/* 
-.droptarget{
-    position: absolute;
-    display:block;
-    height: 20px;
-    width:20px;
-    background-color: blue;
-    z-index: 2;
+
+#clean-bottle{
+    display:none;
 }
 
-.cleanVid{
-    position: relative;
-    display:inline;
-} */
+#shredded-bottle{
+    display:none;
+}
+
+#replay{
+    display:none;
+}
