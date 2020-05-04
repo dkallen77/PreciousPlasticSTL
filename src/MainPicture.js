@@ -15,33 +15,33 @@ class MainPicture extends Component {
     }
 
     RotateImgs = () => {
-        if(this.state.flipped == false){
+        if(this.state.flipped === false){
             this.setState({flipped:true});
             var shown = document.getElementById("shown-pic");
             var hidden = document.getElementById("hidden-pic");
             var rot = 0;
             var id = setInterval(frame, 5);
             function frame() {
-                if (rot == 180) {
+                if (rot === 180) {
                     clearInterval(id);
                     var hiddenPic = hidden.src;
-                    if(hiddenPic == "http://localhost:3000/static/media/join2.b5e72db5.png"){  //Join
+                    if(hiddenPic === join){  //Join
                         shown.src=collect;
                         shown.alt="Collect";
                     }
-                    if(hiddenPic == "http://localhost:3000/static/media/collect2.955e22d4.png"){  //Collect
+                    if(hiddenPic === collect){  //Collect
                         shown.src=recycle;
                         shown.alt = "Recycle";
                     }
-                    if(hiddenPic == "http://localhost:3000/static/media/recycle2.08ccdd9c.png"){  //Recycle
+                    if(hiddenPic === recycle){  //Recycle
                         shown.src=transform;
                         shown.alt="Transform";
                     }
-                    if(hiddenPic == "http://localhost:3000/static/media/transform2.405c62c5.png"){  //Transform
+                    if(hiddenPic === transform){  //Transform
                         shown.src=community;
                         shown.alt="Community";
                     }
-                    if(hiddenPic == "http://localhost:3000/static/media/community2.968d027b.png"){  //Community
+                    if(hiddenPic === community){  //Community
                         shown.src=join;
                         shown.alt="Join"
                     }
@@ -56,31 +56,31 @@ class MainPicture extends Component {
         }
         else{
             this.setState({flipped:false});
-            var shown = document.getElementById("shown-pic");
-            var hidden = document.getElementById("hidden-pic");
-            var rot = 0;
-            var id = setInterval(frame, 5);
+            shown = document.getElementById("shown-pic");
+            hidden = document.getElementById("hidden-pic");
+            rot = 0;
+            id = setInterval(frame, 5);
             function frame() {
-                if (rot == 180) {
+                if (rot === 180) {
                     clearInterval(id);
                     var shownPic = shown.src;
-                    if(shownPic == "http://localhost:3000/static/media/join2.b5e72db5.png"){  //Join
+                    if(shownPic === join){  //Join
                         hidden.src=collect;
                         hidden.alt="Collect";
                     }
-                    if(shownPic == "http://localhost:3000/static/media/collect2.955e22d4.png"){  //Collect
+                    if(shownPic === collect){  //Collect
                         hidden.src=recycle;
                         hidden.alt="Recycle";
                     }
-                    if(shownPic == "http://localhost:3000/static/media/recycle2.08ccdd9c.png"){  //Recycle
+                    if(shownPic === recycle){  //Recycle
                         hidden.src=transform;
                         hidden.alt="Transform";
                     }
-                    if(shownPic == "http://localhost:3000/static/media/transform2.405c62c5.png"){  //Transform
+                    if(shownPic === transform){  //Transform
                         hidden.src=community;
                         hidden.alt="Community";
                     }
-                    if(shownPic == "http://localhost:3000/static/media/community2.968d027b.png"){  //Community
+                    if(shownPic === community){  //Community
                         hidden.src=join;
                         hidden.alt="Join";
                     }
@@ -108,7 +108,7 @@ class MainPicture extends Component {
                         Precious Plastic STL
                     </div>
                         <img src={join} alt="Join" className="shown-pic" id="shown-pic"/>
-                        <img src={collect} alr="Collect" className="hidden-pic" id="hidden-pic"/>
+                        <img src={collect} alt="Collect" className="hidden-pic" id="hidden-pic"/>
                 </div>
             </div>
         );
